@@ -4,10 +4,10 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
-from data import DataManager
+from data_manager import DataManager
 from strategy import MACDStrategy, RSIStrategy, CombinedStrategy
 from config import Config
-from utils import Logger
+from logger import Logger
 
 class Backtester:
     def __init__(self, symbols=None, timeframe=None, start_date=None, end_date=None):
