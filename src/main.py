@@ -3,12 +3,13 @@ import signal
 import sys
 from datetime import datetime, timedelta
 from config import Config
-from api import OKXClient
-from data import DataManager
+from okx_api_client import OKXClient
+from data_manager import DataManager
 from strategy import MACDStrategy, RSIStrategy, CombinedStrategy
-from risk import RiskManager
-from execution import TradeExecutor
-from utils import BotMonitor,Logger
+from risk_manager import RiskManager
+from trade_execution import TradeExecutor
+from logger import Logger
+from bot_monitor import BotMonitor
 
 
 class TradingBot:

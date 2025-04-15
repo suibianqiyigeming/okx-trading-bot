@@ -4,7 +4,7 @@ import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
-from api import OKXClient
+from okx_api_client import OKXClient
 from config import Config
 
 class DataManager:

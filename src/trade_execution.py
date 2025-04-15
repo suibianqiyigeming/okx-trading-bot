@@ -2,10 +2,10 @@
 # 该模块负责与交易所API进行交互，执行买卖操作，检查订单状态等功能
 import time
 from datetime import datetime
-from api import OKXClient
-from data import DataManager
-from risk import RiskManager
-from utils import Logger
+from okx_api_client import OKXClient
+from data_manager import DataManager
+from risk_manager import RiskManager
+from logger import Logger
 
 class TradeExecutor:
     def __init__(self, client=None, data_manager=None, risk_manager=None):

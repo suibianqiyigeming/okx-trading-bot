@@ -11,14 +11,14 @@ class BotMonitor:
         
         # 存储性能指标
         self.performance_metrics = {
-            'trades_count': 0,
-            'successful_trades': 0,
-            'failed_trades': 0,
-            'profit_loss': 0,
-            'win_rate': 0,
-            'start_balance': 0,
-            'current_balance': 0,
-            'roi': 0
+            'trades_count': 0, # 总交易次数
+            'successful_trades': 0,  # 成功交易次数
+            'failed_trades': 0,  # 失败交易次数
+            'profit_loss': 0,  # 盈亏
+            'win_rate': 0,  # 胜率
+            'start_balance': 0,  # 初始余额
+            'current_balance': 0, # 当前余额
+            'roi': 0  # ROI
         }
         
         # 报警设置
