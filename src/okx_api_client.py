@@ -50,6 +50,7 @@ class OKXClient:
             'OK-ACCESS-SIGN': self._sign(timestamp, method, endpoint, body),
             'OK-ACCESS-TIMESTAMP': timestamp,
             'OK-ACCESS-PASSPHRASE': self.passphrase,
+            'x-simulated-trading': "1",  # 模拟盘交易
             'Content-Type': 'application/json'
         }
         
