@@ -1,10 +1,11 @@
 # 风险管理模块
 
 from config import Config
+from data_manager import DataManager
 
 class RiskManager:
     def __init__(self, data_manager=None):
-        self.data_manager = data_manager
+        self.data_manager = data_manager or DataManager()
         self.position_sizes = {}  # 存储每个交易对的仓位大小
     
     def calculate_position_size(self, symbol, price):
