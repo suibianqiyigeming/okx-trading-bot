@@ -57,7 +57,7 @@ class Backtester:
             self.logger.error(f"Error fetching historical data for {symbol}: {str(e)}")
             return None
     
-    def run_backtest(self, strategy, symbol, initial_capital=10000):
+    def run_backtest(self, strategy, symbol, initial_capital=100000):
         """运行单个符号的回测"""
         # 获取历史数据
         data = self.fetch_historical_data(symbol)

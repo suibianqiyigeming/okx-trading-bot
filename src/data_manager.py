@@ -44,9 +44,11 @@ class DataManager:
         
         if response.get('code') == '0':
             data = response.get('data', [])
+
+            truncated_data = [row[:7] for row in data] # 只保留前7列数据
             
             # 转换为DataFrame
-            df = pd.DataFrame(data, columns=[
+            df = pd.DataFrame(truncated_data, columns=[
                 'timestamp', 'open', 'high', 'low', 'close', 'volume', 'currency_volume'
             ])
             

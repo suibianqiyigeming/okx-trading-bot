@@ -13,7 +13,8 @@ class Config:
     # BASE_URL = "https://www.okx.com/api/v5/sandbox" # 沙箱环境
     
     # 交易配置
-    SYMBOLS = ["BTC-USDT", "ETH-USDT"]
+    # SYMBOLS = ["BTC-USDT", "ETH-USDT"]
+    SYMBOLS = ["BTC-USDT"]
     TIME_INTERVAL = "15m"  # 时间间隔: 1m, 5m, 15m, 30m, 1H, 4H, 1D
     
     # 资金管理 合理设置仓位和止损止盈比例
