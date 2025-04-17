@@ -3,8 +3,8 @@
 class Config:
     # API配置
     # 这是实盘的API
-    # API_KEY = "1c0eeda0-9970-4cd1-af29-07dd110e2cd1" #替换成自己的
-    # SECRET_KEY = "C7FD72FEABA6144C1B898982780758C7"
+    # API_KEY = "" #替换成自己的
+    # SECRET_KEY = ""
     # 这是模拟盘的API
     API_KEY = "f3b61ddd-f9fa-46dd-b473-223b2a5b160d" #替换成自己的
     SECRET_KEY = "AB0CC20F1A122C6665A191403A62A710"
